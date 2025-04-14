@@ -11,7 +11,7 @@
 
 > OOP helps organize software as a collection of discrete objects that incorporate both data and behavior.
 
-This approach mirrors how we perceive and interact with the real world — through objects with characteristics and behaviors.
+This approach mirrors how we perceive and interact with the real world, through objects with characteristics and behaviors.
 
 ---
 
