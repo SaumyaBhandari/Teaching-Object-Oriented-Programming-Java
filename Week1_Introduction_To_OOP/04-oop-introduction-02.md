@@ -108,7 +108,7 @@ Imagine Building a School Management System:
 | Teacher    | name, department, subjects           | assignGrades(), teach()                |
 | Course     | courseCode, title, creditHours       | addStudent(), removeStudent()          |
 
-Each class is self-contained and interacts with others — mimicking real-world entities.
+Each class is self-contained and interacts with others, mimicking real-world entities.
 
 ##⚔️ **OOP vs POP**
 
