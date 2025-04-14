@@ -46,28 +46,6 @@ void withdraw(float amount) {
   balance -= amount;
 }
 ```
-
-
-## 1.2 Characteristics of Procedure-Oriented Programming (POP)
-
-- **Top-down design:** Start from the main problem and break it into sub-problems.
-- **Focus on functions:** Procedures are the building blocks.
-- **Global data usage:** Functions operate on shared variables.
-- **Tight coupling:** Changes in data structure can affect multiple functions.
-
-### ✍️ Example: Simple Banking System in C
-
-```c
-float balance = 1000.0;
-
-void deposit(float amount) {
-  balance += amount;
-}
-
-void withdraw(float amount) {
-  balance -= amount;
-}
-```
 All functions directly manipulate global data (balance). As the system grows, tracking changes and debugging becomes harder.
 
 ---
