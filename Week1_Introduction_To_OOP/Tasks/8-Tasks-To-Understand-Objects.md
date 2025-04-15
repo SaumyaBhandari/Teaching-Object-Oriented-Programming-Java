@@ -1,4 +1,4 @@
-# ✍️ 10 Tasks to Develop Object-Oriented Thinking
+# ✍️ 8 Tasks to Develop Object-Oriented Thinking
 
 ## 1. Object Hunt in the Classroom
 **Task:** Look around your classroom and list 5 real-world objects.  
