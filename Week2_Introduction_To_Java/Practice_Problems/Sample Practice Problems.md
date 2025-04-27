@@ -99,8 +99,7 @@ public class DataTypes {
 
 ---
 
-### 5. Control Statements
-(Conditionals)**
+### **5. Control Statements (Conditionals)**
 **Question:**
 Write a Java program that uses an if-else
 statement to check whether a number is
