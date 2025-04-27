@@ -1,4 +1,4 @@
-### **1. Variables =**
+### **1. Variables **
 **Question:**
 Create a Java program that declares and
 initializes variables of different types
@@ -99,7 +99,7 @@ public class DataTypes {
 
 ---
 
-### **5. Control Statements
+### 5. Control Statements
 (Conditionals)**
 **Question:**
 Write a Java program that uses an if-else
@@ -108,6 +108,9 @@ positive, negative, or zero.
 
 **Solution Code:**
 ```java
+
+import java.util.Scanner
+
 public class ControlStatements {
     public static void main(String[] args)
 {
@@ -149,4 +152,35 @@ public class ControlStatementsLoops {
     }
 }
 ```
+
+---
+### **7. Basic IO Operations**
+**Question:**
+Write a Java program that:
+- Asks the user to enter their name and age using the Scanner class.
+- Stores the name as a String and the age as an int.
+- Then prints out the name and age in a friendly format.
+
+```java
+
+import java.util.Scanner;
+
+public class ScannerExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();
+
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
+
+        System.out.println("Your name is: " + name);
+        System.out.println("Your age is: " + age);
+
+        scanner.close();
+    }
+}
+```
+---
 
