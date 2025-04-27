@@ -13,12 +13,9 @@ public class Variables {
         double num2 = 3.14;
         boolean isTrue = true;
 
-        System.out.println("Integer
-variable: " + num1);
-        System.out.println("Double
-variable: " + num2);
-        System.out.println("Boolean
-variable: " + isTrue);
+        System.out.println("Integer variable: " + num1);
+        System.out.println("Double variable: " + num2);
+        System.out.println("Boolean variable: " + isTrue);
     }
 }
 ```
@@ -70,8 +67,7 @@ public class Operators {
         int d = 2;
 
         int result = (a + b) * (c - d) / 4;
-        System.out.println("Result: " +
-result);
+        System.out.println("Result: " + result);
     }
 }
 ```
@@ -117,21 +113,16 @@ public class ControlStatements {
 {
         int num = 0;
 
-        System.out.println("Enter a number:
-");
-        Scanner scanner = new
-Scanner(System.in);
+        System.out.println("Enter a number:");
+        Scanner scanner = new Scanner(System.in);
         num = scanner.nextInt();
 
         if (num > 0) {
-            System.out.println("The number
-is positive.");
+            System.out.println("The number is positive.");
         } else if (num < 0) {
-            System.out.println("The number
-is negative.");
+            System.out.println("The number is negative.");
         } else {
-            System.out.println("The number
-is zero.");
+            System.out.println("The numberis zero.");
         }
     }
 }
@@ -149,8 +140,7 @@ to print all even numbers from 1 to 10.
 public class ControlStatementsLoops {
     public static void main(String[] args)
 {
-        System.out.println("Even numbers
-from 1 to 10:");
+        System.out.println("Even numbers from 1 to 10:");
         for (int i = 1; i <= 10; i++) {
             if (i % 2 == 0) {
                 System.out.println(i);
