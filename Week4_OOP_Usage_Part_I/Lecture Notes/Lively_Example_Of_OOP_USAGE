@@ -1,0 +1,216 @@
+# Understanding 4 Concepts Using Java
+
+### Core OOP Concepts Covered:
+
+1. Inheritance
+2. Encapsulation
+3. Polymorphism
+   - Method Overriding
+   - Method Overloading
+4. Use of `super()`
+5. Use of `static` variables and methods
+
+---
+
+## 🐾 Introduction
+
+Let's imagine the following real-world hierarchy:
+
+- **Animal**
+  - All animals can `eat()`, `sleep()`, `run()`, and `makeSound()`
+- **Dog**, **Cat**, **Lion** are types of animals
+  - Dogs can `bark()`, Cats can `meow()`
+- Some dog breeds like **GoldenRetriever**, **GermanShepherd**, etc.
+  - GoldenRetriever can also `play()`, `beFriendly()`
+- Each breed may have more specific behavior.
+
+Now, let's implement this using **Object-Oriented Programming in Java**.
+
+---
+
+## 🔹 Step 1: The `Animal` Class (Super Class)
+
+```java
+class Animal {
+    private int legs = 4; // Encapsulated member variable
+    static int animalCount = 0; // static variable - shared by all animals
+
+    Animal() {
+        animalCount++;  // Count how many animals were created
+        System.out.println("Animal constructor called.");
+    }
+
+    void eat() {
+        System.out.println("Animal eats food.");
+    }
+
+    void sleep() {
+        System.out.println("Animal sleeps.");
+    }
+
+    void run() {
+        System.out.println("Animal runs on " + legs + " legs.");
+    }
+
+    void makeSound() {
+        System.out.println("Animal makes sound.");
+    }
+
+    public int getLegs() {
+        return legs;
+    }
+
+    public void setLegs(int l) {
+        legs = l;
+    }
+
+    static void showAnimalCount() {
+        System.out.println("Total animals created: " + animalCount);
+    }
+}
+```
+
+**Explanation:**
+- legs is private, this is encapsulation. You must use getters/setters to access it.
+- animalCount is a static variable shared by all Animal instances.
+- The constructor increases the animal count every time an animal is created.
+
+## 🔹 Step 2: The Dog Class (Child of Animal)
+
+```java
+class Dog extends Animal {
+    String breed;
+
+    Dog(String breed) {
+        super();  // Call Animal constructor
+        this.breed = breed;
+        System.out.println("Dog constructor called for breed: " + breed);
+    }
+
+    void bark() {
+        System.out.println(breed + " barks loudly.");
+    }
+
+    // Overriding method
+    @Override
+    void makeSound() {
+        System.out.println(breed + " makes barking sound.");
+    }
+}
+```
+
+**Explanation:**
+- Dog extends Animal: This is inheritance.
+- super() calls the parent class constructor.
+- makeSound() is overridden. This is runtime polymorphism.
+
+## 🔹 Step 3: The GoldenRetriever Class (Grandchild)
+
+```java
+class GoldenRetriever extends Dog {
+
+    GoldenRetriever() {
+        super("GoldenRetriever");  // Pass breed name to Dog
+        System.out.println("Golden Retriever is created.");
+    }
+
+    void friendly() {
+        System.out.println("Golden Retriever is friendly and loves people.");
+    }
+
+    // Method Overloading: same method name, different parameters
+    void play() {
+        System.out.println("Golden Retriever plays fetch.");
+    }
+
+    void play(String toy) {
+        System.out.println("Golden Retriever plays with a " + toy + ".");
+    }
+}
+```
+**Explanation:**
+- Multilevel Inheritance: Animal → Dog → GoldenRetriever
+- Uses super() to pass information to the parent
+- Shows method overloading (compile-time polymorphism)
+
+## 🔹 Step 4: The Cat Class (Another Child of Animal)
+```java
+class Cat extends Animal {
+
+    Cat() {
+        super();  // Call Animal constructor
+        System.out.println("Cat constructor called.");
+    }
+
+    void meow() {
+        System.out.println("Cat meows.");
+    }
+
+    @Override
+    void makeSound() {
+        System.out.println("Cat makes meowing sound.");
+    }
+}
+```
+
+**Explanation:**
+- Cat is another subclass of Animal
+- Hierarchical inheritance
+- Overrides makeSound()
+
+## 🔹 Step 5: Main Class: Bringing it All Together
+```java
+public class UnderstandingOOPUsage {
+    public static void main(String[] args) {
+
+        System.out.println("\n--- Animal Object ---");
+        Animal a = new Animal();
+        a.eat();
+        a.sleep();
+        a.run();
+        a.makeSound();
+
+        System.out.println("\n--- Dog Object ---");
+        Dog dog = new Dog("German Shepherd");
+        dog.eat();       // from Animal
+        dog.bark();      // Dog specific
+        dog.makeSound(); // overridden
+
+        System.out.println("\n--- GoldenRetriever Object ---");
+        GoldenRetriever gr = new GoldenRetriever();
+        gr.eat();
+        gr.friendly();
+        gr.play();          // Overloaded method 1
+        gr.play("ball");    // Overloaded method 2
+        gr.makeSound();     // overridden
+
+        System.out.println("\n--- Cat Object ---");
+        Cat cat = new Cat();
+        cat.eat();
+        cat.meow();
+        cat.makeSound();
+
+        System.out.println("\n--- Static Method Demo ---");
+        Animal.showAnimalCount();
+
+        System.out.println("\n--- Encapsulation Demo ---");
+        System.out.println("Cat has " + cat.getLegs() + " legs.");
+        cat.setLegs(3);
+        cat.run();  // shows updated leg count
+    }
+}
+```
+
+## Summary of Concepts Used
+
+| Concept                  | Where Used                                          |
+| ------------------------ | --------------------------------------------------- |
+| Inheritance              | `Dog extends Animal`, `GoldenRetriever extends Dog` |
+| Multilevel Inheritance   | `Animal → Dog → GoldenRetriever`                    |
+| Hierarchical Inheritance | `Animal → Dog`, `Animal → Cat`                      |
+| Encapsulation            | `private int legs`, accessed via getter/setter      |
+| Method Overriding        | `makeSound()` in `Dog`, `Cat`, `GoldenRetriever`    |
+| Method Overloading       | `play()` in `GoldenRetriever`                       |
+| Static Member            | `animalCount`, `showAnimalCount()`                  |
+| super() Usage            | Calling superclass constructor from child class     |
+
