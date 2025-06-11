@@ -1,4 +1,3 @@
----
 ## 1. Introduction to Abstraction
 **Abstraction** is one of the fundamental principles of Object-Oriented Programming (OOP) in Java. At its core, abstraction means hiding the complex implementation details and showing only the essential features or functionalities to the user. Think of it like driving a car: you know how to operate the steering wheel, accelerator, and brake, but you don't necessarily need to understand the intricate workings of the engine, transmission, or electrical system. The car abstracts away those complexities, allowing you to focus on driving.
 
