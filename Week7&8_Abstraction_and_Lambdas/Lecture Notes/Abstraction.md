@@ -18,7 +18,7 @@ An **abstract class** is a class that cannot be instantiated directly. It can co
 * **Cannot be instantiated:** You cannot create an object of an abstract class using the `new` keyword.
 * **Can have abstract methods:** These methods are declared with the `abstract` keyword and have no implementation. Subclasses must provide an implementation for all inherited abstract methods, unless the subclass itself is declared abstract.
 * **Can have concrete methods:** These are regular methods with an implementation.
-* **Can have constructors:** Abstract classes can have constructors, which are called when a concrete subclass is instantiated.
+* **Can have constructors:** Abstract classes can have constructors, which are called when a coqncrete subclass is instantiated.
 * **Can have final methods:** An abstract class can have final methods, which cannot be overridden by subclasses.
 * **Can have static methods:** An abstract class can have static methods.
 
