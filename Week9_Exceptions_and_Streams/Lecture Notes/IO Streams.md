@@ -1,4 +1,4 @@
-### Java I/O Streams (6 hours)
+### Java I/O Streams
 
 ### 6.1 Introduction to Streams, Byte Stream, and Character Stream
 

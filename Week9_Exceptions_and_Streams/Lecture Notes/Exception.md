@@ -1,4 +1,4 @@
-# Unit V: Exception Handling (6 hrs.)
+# Unit V: Exception Handling
 
 ## 5.1 Introduction to Exception
 
