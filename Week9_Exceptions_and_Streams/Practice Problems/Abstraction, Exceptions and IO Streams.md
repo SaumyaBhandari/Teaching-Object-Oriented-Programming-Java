@@ -20,7 +20,7 @@ Bijay and Pooja are planning a grand Dashain celebration and need a smart system
         * `void displayOverview()`
         * This method should print the activity name and estimated cost.
 
-### File: `FestivalActivity.java`
+#### File: `FestivalActivity.java`
 
 ## Tika Ceremony Planning Module
 
@@ -43,7 +43,7 @@ Bijay and Pooja are planning a grand Dashain celebration and need a smart system
     * Include some objects with **valid data** and some that will **trigger exceptions**.
     * Demonstrate catching `FestivalPlanningException`, `InvalidGuestCountException`, and `BudgetExceededException`.
 
-### File: `TikaCeremony.java`
+#### File: `TikaCeremony.java`
 
 ## Deusi Bhailo Event Planning Module
 
@@ -64,7 +64,7 @@ Bijay and Pooja are planning a grand Dashain celebration and need a smart system
     * Test `DeusiBhailo` with valid and problematic data.
     * Demonstrate catching `FestivalPlanningException` and `NoRouteException`.
 
-### File: `DeusiBhailo.java`
+#### File: `DeusiBhailo.java`
 
 
 ## Dashain Festival Master Planner
@@ -90,7 +90,7 @@ Bijay and Pooja are planning a grand Dashain celebration and need a smart system
     * Call `executeFestivalPlan()`.
 * **Humor:** This system helps manage the chaos of Dashain planning, even if someone forgets the budget or the Deusi route!
 
-### File: `DashainPlanner.java`
+#### File: `DashainPlanner.java`
 
 ---
 
@@ -107,7 +107,7 @@ Harikrishna and Damodar are now tackling Kathmandu's infamous traffic with a new
 * **Create a custom checked exception:** `InvalidRouteException`.
 * *Interrelation:* This interface ensures that any route validation system declares potential issues.
 
-### File: `RouteValidator.java`
+#### File: `RouteValidator.java`
 
 ## Kathmandu Traffic Route Validator
 
@@ -123,7 +123,7 @@ Harikrishna and Damodar are now tackling Kathmandu's infamous traffic with a new
     * Test `KathmanduTrafficValidator` with various scenarios (same origin/destination, very short/long distances).
     * Demonstrate catching `InvalidRouteException` and `SameLocationException`.
 
-### File: `KathmanduTrafficValidator.java`
+#### File: `KathmanduTrafficValidator.java`
 
 ## Navigation System Interface
 
@@ -134,7 +134,7 @@ Harikrishna and Damodar are now tackling Kathmandu's infamous traffic with a new
 * **Create a custom checked exception:** `NavigationFailedException`.
 * *Interrelation:* This interface defines the contract for navigation, including the possibility of failure.
 
-### File: `NavigationService.java`
+#### File: `NavigationService.java`
 
 ## GPS Navigation Module
 
@@ -153,7 +153,7 @@ Harikrishna and Damodar are now tackling Kathmandu's infamous traffic with a new
     * Test `GPSNavigationModule` with different routes (some valid, some failing validation, some simulating GPS loss).
     * Demonstrate catching `NavigationFailedException` and inspecting the chained exception.
 
-### File: `GPSNavigationModule.java`
+#### File: `GPSNavigationModule.java`
 
 ## Kathmandu Commute Planner
 
@@ -172,7 +172,7 @@ Harikrishna and Damodar are now tackling Kathmandu's infamous traffic with a new
     * Call `planMyCommute` with various origins/destinations to test all exception paths (e.g., "Baneshwor", "Baneshwor"; "Thamel", "Patan" (valid); "Kalanki", "Balaju" (GPS error)).
 * **Humor:** This app might not fix the traffic, but at least it tells you why you're stuck (or why your route won't work)!
 
-### File: `CommutePlanner.java`
+#### File: `CommutePlanner.java`
 
 ---
 
@@ -189,7 +189,7 @@ Anisha and Roshan are launching "Skill Nepal," an online platform for students t
 * **Create a custom checked exception:** `EnrollmentDeniedException`.
 * *Interrelation:* This functional interface ensures that any eligibility check can throw a specific `EnrollmentDeniedException`.
 
-### File: `EligibilityRule.java`
+#### File: `EligibilityRule.java`
 
 ## Online Course Enrollment Manager (with Lambda)
 
@@ -212,7 +212,7 @@ Anisha and Roshan are launching "Skill Nepal," an online platform for students t
     * Call `enrollStudent` with various `studentId`/`courseId` pairs to test all scenarios (valid, suspended, invalid ID format, general not eligible).
 * **Humor:** Even online learning needs rules! Your lambda ensures no one sneakily enrolls without paying.
 
-### File: `CourseEnrollmentManager.java`
+#### File: `CourseEnrollmentManager.java`
 
 ## Student Dashboard Enrollment Status
 
@@ -235,7 +235,7 @@ Anisha and Roshan are launching "Skill Nepal," an online platform for students t
         * "SKILL999", "PYTHON202" (suspended)
         * "STUDENT001", "JAVA101" (invalid ID format)
 
-### File: `StudentDashboard.java`
+#### File: `StudentDashboard.java`
 
 ---
 
@@ -255,7 +255,7 @@ Sita and Ram are helping the Nepal Tourism Board (NTB) collect and process data 
 * **Create a custom checked exception:** `DataSourceAccessException`.
 * *Interrelation:* `fetchData()` declares an exception, indicating that getting data from any source can fail.
 
-### File: `TouristDataSource.java`
+#### File: `TouristDataSource.java`
 
 ## Airport Arrivals Data Source
 
@@ -271,7 +271,7 @@ Sita and Ram are helping the Nepal Tourism Board (NTB) collect and process data 
     * Test `AirportArrivalsDataSource`.
     * Demonstrate catching `DataSourceAccessException` (which might wrap `ConnectionLostException`).
 
-### File: `AirportArrivalsDataSource.java`
+#### File: `AirportArrivalsDataSource.java`
 
 ## Hotel Registrations Data Source
 
@@ -287,7 +287,7 @@ Sita and Ram are helping the Nepal Tourism Board (NTB) collect and process data 
     * Test `HotelRegistrationsDataSource`.
     * Demonstrate catching `DataSourceAccessException` (which might wrap `AuthenticationFailedException`).
 
-### File: `HotelRegistrationsDataSource.java`
+#### File: `HotelRegistrationsDataSource.java`
 
 ## Data Processing Interface
 
@@ -298,7 +298,7 @@ Sita and Ram are helping the Nepal Tourism Board (NTB) collect and process data 
 * **Create a custom checked exception:** `DataProcessingException`.
 * *Interrelation:* This interface ensures any data processing module declares potential issues.
 
-### File: `DataProcessor.java`
+#### File: `DataProcessor.java`
 
 ## Unique Visitor Counter Processor
 
@@ -313,7 +313,7 @@ Sita and Ram are helping the Nepal Tourism Board (NTB) collect and process data 
 * **In a `main` method (for testing purposes):**
     * Test `UniqueVisitorCounter` with an empty list and a list of dummy data.
 
-### File: `UniqueVisitorCounter.java`
+#### File: `UniqueVisitorCounter.java`
 
 ## Nepal Tourism Report Generator
 
@@ -340,4 +340,4 @@ Sita and Ram are helping the Nepal Tourism Board (NTB) collect and process data 
     * Create an instance of `UniqueVisitorCounter`.
     * Call `generateOverallReport()`.
 
-### File: `TourismReportGenerator.java`
+#### File: `TourismReportGenerator.java`
