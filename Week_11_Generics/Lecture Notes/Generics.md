@@ -89,8 +89,8 @@ Consider the need for a class capable of storing pairs of items, such as a `Pair
 
 ```java
 // We'll see how to write this in the next section!
-// Pair<String, Integer> studentInfo = new Pair<>("Alice", 20);
-// Pair<Double, Double> coordinates = new Pair<>(10.5, 20.3);
+Pair<String, Integer> studentInfo = new Pair<>("Samikshya", 20);
+Pair<Double, Double> coordinates = new Pair<>(10.5, 20.3);
 ```
 
 This approach significantly conserves development time and enhances code maintainability.
