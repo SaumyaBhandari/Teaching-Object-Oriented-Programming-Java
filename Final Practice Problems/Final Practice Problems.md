@@ -64,7 +64,7 @@ Attempt any five questions.
 
 1.  Explain how to read and write primitive data types (like 'int', 'double', 'boolean', 'String') to a file using 'DataInputStream' and 'DataOutputStream'. Provide a complete Java code example demonstrating both writing and reading.
 
-2.  Write a program to create the following GUI using Swing components: a currency converter. When the user clicks "Convert", the amount in NPR should be converted to INR and USD and displayed in their respective fields. Assume suitable conversion rates.
+2. Develop a Java Swing application that creates a currency converter graphical user interface. The GUI should feature an interactive input field for the amount to be converted, along with two dropdown menus labeled 'From' and 'To' respectively, allowing users to select between United States Dollar (USD), Euro (EUR), Zimbabwean Dollar (ZWL), and Nepalese Rupee (NPR). Include a 'Convert' button that, when clicked, calculates and displays the converted amount in a designated result area. For the conversion logic, use USD as the base currency with the following fixed exchange rates: 1 USD equals 0.92 EUR, 67355.6 ZWL, and 137.00 NPR.
 
     ![alt text](currencyConverterUI.png)
 
