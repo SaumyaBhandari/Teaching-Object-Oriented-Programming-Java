@@ -68,15 +68,15 @@ Attempt any five questions.
 
     ![alt text](currencyConverterUI.png)
 
-3.  Write a Java program to do the following:
-    a. Create an interface 'Calculate' with methods:
-        i.  'int sum(int, int)'
-        ii. 'int diff(int, int)'
-    b. Create a class 'PerformCalculation' that implements both methods.
-    c. Write a class 'DemoCalculate' with a 'main' method to:
-        i.  Take two integers as input from the user
-        ii. Create an object of 'PerformCalculation' to calculate sum and difference
-        iii. Display the results on the console
+I. Write a Java program to do the following:
+    * Create an interface 'Calculate' with methods:
+        * `int sum(int, int)`
+        * `int diff(int, int)`
+    * Create a class 'PerformCalculation' that implements both methods.
+    * Write a class 'DemoCalculate' with a 'main' method to:
+        * Take two integers as input from the user.
+        * Create an object of 'PerformCalculation' to calculate sum and difference.
+        * Display the results on the console.
 
 4.  Describe the hierarchy of Java I/O classes. Explain the purpose of the key abstract base classes ('InputStream', 'OutputStream', 'Reader', 'Writer') and how concrete classes extend them to provide specific functionalities.
 
@@ -85,17 +85,17 @@ Attempt any five questions.
     ![alt text](calculatorUI.png)
 
 6.  Write a Java program with the following structure:
-    a. Define an interface 'GeometricShape' with:
-        i.  'double calculateArea()'
-        ii. 'double calculatePerimeter()'
-    b. Create a class 'Circle' that implements 'GeometricShape':
-        i.  Include a private double variable for radius
-        ii. Use a constructor to initialize radius
-        iii. Implement both methods to calculate area and perimeter
-    c. Create a 'DemoShape' class with 'main' method:
-        i.  Accept the radius from the user using Scanner
-        ii. Instantiate the 'Circle' class
-        iii. Call the methods and display area and perimeter formatted to two decimal places
+    * Define an interface 'GeometricShape' with:
+        *  'double calculateArea()'
+        * 'double calculatePerimeter()'
+    * Create a class 'Circle' that implements 'GeometricShape':
+        *  Include a private double variable for radius
+        * Use a constructor to initialize radius
+        * Implement both methods to calculate area and perimeter
+    * Create a 'DemoShape' class with 'main' method:
+        *  Accept the radius from the user using Scanner
+        * Instantiate the 'Circle' class
+        * Call the methods and display area and perimeter formatted to two decimal places
 
 7.  Design and implement a Java program simulating a simple banking system. Include:
     - A class 'Account' with account number, balance, and methods for deposit and withdrawal
